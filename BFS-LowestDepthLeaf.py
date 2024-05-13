@@ -87,7 +87,9 @@ def __main__() :
     #initilize Graph
     G = Graph([n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12])
     #asking for smallest depth from root, root being n1
-    print(G.getLowestDepthFromRoot(n1))
+    ret = G.getLowestDepthFromRoot(n1)
+    print("Depth : ", ret[0])
+    print("Node : ",  ret[1])
     
     
     
