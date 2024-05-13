@@ -15,27 +15,27 @@ def __main__() :
     n10 = Node(10)
     n11 = Node(11)
     n12 = Node(12)
+    n13 = Node(13)
+    n14 = Node(14)
+    n15 = Node(15)
     #adding adjacency data to nodes
     n1.adj = [n2, n3]
     n2.adj = [n4, n5]
     n3.adj = [n6, n7]
-    n4.adj = [n8]
-    n5.adj = [n9]
-    n6.adj = []
-    n7.adj = [n10, n11]
-    n8.adj = [n12]
+    n4.adj = [n8, n9]
+    n5.adj = [n10, n11]
+    n6.adj = [n12, n13]
+    n7.adj = [n14, n15]
+    n8.adj = []
     n9.adj = []
     n10.adj = []
     n11.adj = []
     n12.adj = []
     #initilize Graph
-    G = Graph([n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12])
-    #asking for smallest depth from root, root being n1
-    ret = G.getLowestDepthFromRoot(n1)
-    print("Depth : ", ret[0])
-    print("Node : ",  ret[1])
-    
+    G = Graph([n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n13, n14, n15])
+    ret = G.sortByDepthFromRoot(n1)
+    print("\n \nSorted Depth List (Depth, Node id) : ")
+    print(ret)
     
     
 __main__()
-                    
